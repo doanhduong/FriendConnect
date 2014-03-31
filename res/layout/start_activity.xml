@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <ImageView
+        android:id="@+id/welc_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome" />
+
+    <ImageView
+        android:id="@+id/ray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ray" />
+    
+    <ImageView
+        android:id="@+id/welc_logo"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welc_logo"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+   
+
+    <TextView
+        android:id="@+id/loadingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        android:text="Just a second..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+</RelativeLayout>

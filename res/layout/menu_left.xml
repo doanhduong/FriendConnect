@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_background"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="FRIEND CONNECT"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/menu_layout_userinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_title"
+        android:padding="4dp"
+        android:background="@drawable/list_selector" >
+
+        <ImageView
+            android:id="@+id/menu_left_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/menu_left_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/menu_left_avatar"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/menu_left_avatar"
+            android:layout_toRightOf="@+id/menu_left_avatar"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="doanh"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/menu_left_listbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_layout_userinfo"
+        android:divider="@drawable/menu_divider"
+        android:dividerHeight="1dp"        
+        android:listSelector="@drawable/list_selector"
+      >
+    </ListView>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/menu_layout_userinfo"
+        android:background="@drawable/menu_divider"  />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/menu_layout_userinfo"
+        android:layout_alignParentLeft="true"
+       android:background="@drawable/menu_divider" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/menu_left_listbtn"
+        android:background="@drawable/menu_divider"  />
+
+</RelativeLayout>

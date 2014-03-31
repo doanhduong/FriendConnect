@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF3333</color>
+    <color name="blue">#472BD6</color>
+    <color name="green">#00B500</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#C9C9C9</color>
+    <color name="gray_2">#595959</color>
+    <color name="gray_3">#828282</color>
+    <color name="orange">#FF9900</color>
+    
+    <color name="list_background">#383531</color>
+    <color name="list_background_state_activated">#992416</color>
+    <color name="list_divider">#272727</color>
+     <color name="bg_title_bar">#26733E</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Friend Connect</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="home">Trang Chủ</string>
+    <string name="message">Tin Nhắn</string>
+    <string name="contact">Danh Bạ</string>
+    <string name="connect">Kết Nối</string>
+    <string name="notification">Thông báo</string>
+    <string name="setting">Cài Đặt</string>
+    
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Nhập lại mật khẩu</string>
+    <string name="email">E-mail</string>
+    <string name="forget_password">Quên mật khẩu?</string>
+    
+</resources>
