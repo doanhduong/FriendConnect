@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/gray" >
+
+            <ImageView
+                android:id="@+id/update_information_avatar_iv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_action_picture" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/setting_edit_profile_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="ID:" />
+
+                <TextView
+                    android:id="@+id/update_information_username_tv"
+                    style=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_email_update"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/setting_change_password_tv"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Tên đăng nhập"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/update_information_email_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/setting_change_password_tv"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:text="friendconnect@fc.com"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/setting_change_password_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Email: " />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearLayout1"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#d6d6d6" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <EditText
+                    android:id="@+id/update_information_fullname_et"
+                    style="@style/etStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:ems="10"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/update_information_address_et"
+                    style="@style/etStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/update_information_fullname_et"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/update_information_fullname_et"
+                    android:ems="10"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/update_information_phone_et"
+                    style="@style/etStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/update_information_fullname_et"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/update_information_address_et"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/update_information_birthday_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/update_information_phone_et"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/update_information_phone_et"
+                    android:layout_marginTop="15dp"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text=" Nhập ngày sinh"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/setting_notification_settup_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/update_information_fullname_et"
+                    android:layout_alignBottom="@+id/update_information_fullname_et"
+                    android:layout_alignParentLeft="true"
+                    android:text="Họ và tên" />
+
+                <TextView
+                    android:id="@+id/setting_logout_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/update_information_address_et"
+                    android:layout_alignBottom="@+id/update_information_address_et"
+                    android:layout_alignParentLeft="true"
+                    android:text="Địa chỉ" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/update_information_phone_et"
+                    android:layout_alignBottom="@+id/update_information_phone_et"
+                    android:layout_alignParentLeft="true"
+                    android:text="Điện thoại" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/update_information_birthday_tv"
+                    android:layout_alignBottom="@+id/update_information_birthday_tv"
+                    android:layout_alignParentLeft="true"
+                    android:text="Ngày sinh" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView7"
+                    android:layout_marginTop="29dp"
+                    android:text="Giới tính" />
+
+                <RadioGroup
+                    android:id="@+id/update_information_gender_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/update_information_birthday_tv"
+                    android:layout_below="@+id/update_information_birthday_tv"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/update_information_gender_male_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Nam" />
+
+                    <RadioButton
+                        android:id="@+id/update_information_gender_female_radiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nữ" />
+                </RadioGroup>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

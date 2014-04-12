@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
-    <issue id="NewApi">
+    <issue id="NewApi" severity="ignore">
         <ignore path="src/com/it4996/adapter/ButtonOfMenuLeftAdapter.java" />
         <ignore path="src/com/it4996/base/FriendConnectFragmentActivity.java" />
         <ignore path="src/com/it4996/friendconnect/MainActivity.java" />
+        <ignore path="src/com/it4996/screen/ArticleFullInfo.java" />
+        <ignore path="src/com/it4996/screen/UpdateAvatarCover.java" />
+        <ignore path="src/com/it4996/screen/UserScreen.java" />
     </issue>
 </lint>

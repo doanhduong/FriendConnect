@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_new_article"
+        android:title="Đăng bài viết" android:checkable="false"/>
+    <item
+        android:id="@+id/menu_new_status"
+        android:title="Chia sẻ cảm nghĩ"/>
+    <item
+        android:id="@+id/menu_remove_status"
+        android:title="Xóa cảm nghĩ"/>
+    <item
+        android:id="@+id/menu_edit_profile"
+        android:title="Chỉnh sửa thông tin"/>
+    <item
+        android:id="@+id/menu_update_avatar"
+        android:title="Cập nhật ảnh đại diện"/>
+    <item
+        android:id="@+id/menu_update_cover"
+        android:title="Cập nhật ảnh bìa"/>
+
+</menu>

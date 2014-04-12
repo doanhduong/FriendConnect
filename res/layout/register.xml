@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" 
+        >
+
+        <EditText
+            android:id="@+id/register_username_et"
+            style="@style/etStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/ic_username"
+            android:ems="10"
+            android:hint="@string/username"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/register_password_et"
+            style="@style/etStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_username_et"
+            android:layout_below="@+id/register_username_et"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/ic_password_register"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/register_confirm_password_et"
+            style="@style/etStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_password_et"
+            android:layout_below="@+id/register_password_et"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/ic_confirm_password_register"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/register_email_et"
+            style="@style/etStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/register_confirm_password_et"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/ic_email_register"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/register_btn_register"
+            style="@style/btnStyleOrange"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_email_et"
+            android:layout_alignRight="@+id/register_confirm_password_et"
+            android:layout_below="@+id/register_email_et"
+            android:layout_marginTop="10dp"
+            android:text="@string/register" />
+
+        <TextView
+            android:id="@+id/register_link_to_login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_btn_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Bạn đã có tài khoản?\nĐăng nhập ở đây"
+            android:textColor="#334499"
+            android:textSize="13dp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+</RelativeLayout>

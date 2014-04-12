@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp" >
+
+        <EditText
+            android:id="@+id/forget_password_email_et"
+            style="@style/etStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/forget_password_btn"
+            android:drawableLeft="@drawable/ic_email_register"
+            android:ems="10"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/forget_password_btn"
+            style="@style/btnStyleOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/forget_password_email_et"
+            android:layout_alignBottom="@+id/forget_password_email_et"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="@string/send" />
+    </RelativeLayout>
+
+</RelativeLayout>

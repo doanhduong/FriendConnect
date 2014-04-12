@@ -4,7 +4,7 @@
     android:layout_height="fill_parent" >
 
     <com.it4996.object.TitleBar
-        android:id="@+id/titleBar1"
+        android:id="@+id/titleBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/titleBar1" >
+        android:layout_below="@+id/titleBar" >
     </FrameLayout>
 
 </RelativeLayout>

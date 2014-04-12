@@ -14,7 +14,7 @@ public class Font {
 
 	public void setDefaultTypeface() {
 		font = Typeface.createFromAsset(activity.getAssets(),
-				"fonts/HELVETICANEUELTSTD-TH.OTF");
+				"fonts/HelveticaNeueLTStd-LtExO.otf");
 	}
 
 	public Typeface getFont() {

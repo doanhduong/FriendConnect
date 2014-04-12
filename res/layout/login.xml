@@ -1,66 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_normal_boxlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
     <RelativeLayout
-        android:id="@+id/login_normal_boxlayout"
-        android:layout_width="fill_parent"
-        android:layout_height="400dp"
-        android:layout_marginTop="15dp"
-        android:background="@color/gray" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
 
-        <TextView
-            android:id="@+id/textView1"
+        <EditText
+            android:id="@+id/login_username_et"
+            style="@style/etStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="59dp"
-            android:text="@string/login" />
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/ic_username"
+            android:ems="10"
+            android:hint="@string/username"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
 
         <EditText
             android:id="@+id/login_pass_et"
+            style="@style/etStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/login_username_et"
-            android:layout_marginBottom="3dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@color/gray_2"
-            android:drawableLeft="@drawable/ic_password"
-            android:ems="10"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/ic_password_register"
             android:hint="@string/password"
-            android:inputType="textPassword"
-            android:textSize="13sp" />
-
-        <EditText
-            android:id="@+id/login_username_et"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView1"
-            android:layout_marginTop="48dp"
-            android:background="@color/gray_2"
-            android:drawableLeft="@drawable/ic_username"
-            android:ems="10"
-            android:hint="@string/username"
-            android:textSize="13sp" 
-            android:layout_marginBottom="3dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"/>
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/login_btn_login"
-            android:layout_width="wrap_content"
+            style="@style/btnStyleOrange"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/login_pass_et"
             android:layout_below="@+id/login_pass_et"
-            android:layout_marginRight="26dp"
-            android:layout_marginTop="23dp"
+            android:layout_marginTop="10dp"
             android:text="@string/login" />
 
         <TextView
@@ -69,13 +55,25 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/login_btn_login"
             android:layout_alignBottom="@+id/login_btn_login"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="26dp"
+            android:layout_alignLeft="@+id/login_pass_et"
             android:text="@string/forget_password"
             android:textColor="@color/blue"
             android:textColorLink="@color/blue"
             android:textStyle="italic" />
-       
+
+        <TextView
+            android:id="@+id/login_link_to_register_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login_forget_pass_tv"
+            android:layout_below="@+id/login_btn_login"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Bạn chưa có tài khoản?\nĐăng ký ở đây"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
     </RelativeLayout>
 
 </RelativeLayout>
